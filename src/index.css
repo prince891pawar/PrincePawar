@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+	font-family: 'DM Sans', sans-serif;
+	color: #F8FAFC;
+	background: #07111F;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	scroll-behavior: smooth;
+	color-scheme: dark;
+	--page: #07111F;
+	--page-raised: #0A1628;
+	--page-soft: #0D1B2A;
+	--card: #0D1B2A;
+	--card-raised: #11243A;
+	--ink: #F8FAFC;
+	--muted: #94A3B8;
+	--subtle: #64748B;
+	--line: rgba(148, 163, 184, 0.12);
+	--accent: #38BDF8;
+	--accent-strong: #0EA5E9;
+	--accent-ink: #07111F;
+	--heading: 'Space Grotesk', sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-padding-top: 96px; }
+body { min-width: 320px; margin: 0; background: var(--page); }
+body, button, input, textarea { font-family: 'DM Sans', sans-serif; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; }
+button, input, textarea { font: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+::selection { color: var(--accent-ink); background: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
