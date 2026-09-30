@@ -166,7 +166,7 @@ function Navbar() {
     <header className={`site-header${scrolled ? ' site-header--scrolled' : ''}`}>
       <nav className="navbar page-wrap" aria-label="Main navigation">
         <a className="brand" href="#home" onClick={closeMenu} aria-label="Prince Pawar, home">
-          <span className="brand__mark">P<span>P</span></span>
+          <img className="brand__mark" src="/logo.svg" alt="PP monogram" />
           <span className="brand__name">Prince Pawar<span className="brand__dot">.</span></span>
         </a>
 
@@ -310,12 +310,12 @@ function Hero() {
 
 function About() {
   return (
-    <section className="section about-section" id="about" aria-labelledby="about-title">
+    <section className="section about-section" id="about" aria-labelledby="about-section-title">
       <div className="page-wrap">
-        <SectionHeading number="01" eyebrow="A little about me" title="Engineering with intention." />
+        <SectionHeading number="01" eyebrow="A little about me" title="Engineering with intention." titleId="about-section-title" />
         <div className="about-grid">
           <Reveal className="about-copy">
-            <h3 id="about-title">Turning ideas into<br /><span>useful experiences.</span></h3>
+            <h3>Turning ideas into<br /><span>useful experiences.</span></h3>
             <p>{profile.about}</p>
             <p>I enjoy moving between the details of an interface and the systems that make it work, always looking for a clearer, more maintainable way to build.</p>
             <a className="inline-link" href={`mailto:${profile.email}`}>Let’s talk <ArrowUpRight aria-hidden="true" /></a>
@@ -583,7 +583,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="page-wrap site-footer__inner">
-        <a className="brand" href="#home" aria-label="Prince Pawar, back to top"><span className="brand__mark">P<span>P</span></span><span className="brand__name">Prince Pawar<span className="brand__dot">.</span></span></a>
+        <a className="brand" href="#home" aria-label="Prince Pawar, back to top"><img className="brand__mark" src="/logo.svg" alt="PP monogram" /><span className="brand__name">Prince Pawar<span className="brand__dot">.</span></span></a>
         <p>© 2026 Prince Pawar. All rights reserved.</p>
         <div className="site-footer__links"><a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub"><Github aria-hidden="true" /></a><a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin aria-hidden="true" /></a><a href={`mailto:${profile.email}`} aria-label="Email"><Mail aria-hidden="true" /></a><a className="back-to-top" href="#home" aria-label="Back to top"><ArrowUpRight aria-hidden="true" /></a></div>
       </div>

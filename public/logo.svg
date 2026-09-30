@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect x="2" y="2" width="124" height="124" rx="28" fill="#07111F" stroke="#38BDF8" stroke-opacity=".72" stroke-width="3" />
+  <path d="M16 17h18v5H21v16h-5zM112 111H94v-5h13V90h5z" fill="#38BDF8" />
+  <text x="64" y="79" fill="#F8FAFC" font-family="Space Grotesk, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-3" text-anchor="middle">PP</text>
+</svg>
